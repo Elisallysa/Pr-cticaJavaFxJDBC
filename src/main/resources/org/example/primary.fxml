@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fx.controller.PrimaryController">
+   <children>
+      <Button fx:id="btnLogin" layoutX="78.0" layoutY="311.0" mnemonicParsing="false" onAction="#validate" prefHeight="32.0" prefWidth="134.0" text="Login" />
+      <Button fx:id="btnReset" layoutX="248.0" layoutY="311.0" mnemonicParsing="false" onAction="#resetFields" prefHeight="32.0" prefWidth="134.0" text="Reset" />
+      <Label layoutX="89.0" layoutY="240.0" prefHeight="32.0" prefWidth="79.0" text="User" />
+      <Label layoutX="89.0" layoutY="275.0" prefHeight="32.0" prefWidth="79.0" text="Password" />
+      <TextField fx:id="tfUser" layoutX="185.0" layoutY="243.0" prefHeight="25.0" prefWidth="185.0" promptText="Username" />
+      <PasswordField fx:id="pwfPassword" layoutX="185.0" layoutY="278.0" prefHeight="25.0" prefWidth="185.0" promptText="Password" />
+      <ImageView fitHeight="208.0" fitWidth="459.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../static/img/doggo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="354.0" prefHeight="32.0" prefWidth="304.0" text="Introduce your username and password." />
+   </children>
+</Pane>
