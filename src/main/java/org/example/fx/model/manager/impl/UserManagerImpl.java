@@ -1,5 +1,6 @@
 package org.example.fx.model.manager.impl;
 
+import org.example.fx.model.connector.MySQLConnector;
 import org.example.fx.model.dao.User;
 import org.example.fx.model.manager.UserManager;
 
@@ -35,6 +36,11 @@ public class UserManagerImpl implements UserManager {
             e.printStackTrace();
             return false;
         }
+    }
+
+    @Override
+    public MySQLConnector getConnector() {
+        return new MySQLConnector();
     }
 
 }

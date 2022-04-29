@@ -15,7 +15,7 @@ public class UserService {
     }
 
     public boolean validateUser(String username, String password) {
-        try (Connection con = new MySQLConnector().getMySQLConnection()) {
+        try (Connection con = userManager.getConnector().getMySQLConnection()) {
 
             return userManager.findUser(con, username, password);
 

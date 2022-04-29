@@ -13,6 +13,7 @@ import org.example.fx.model.connector.MySQLConnector;
 import org.example.fx.model.manager.impl.UserManagerImpl;
 import org.example.fx.service.UserService;
 
+//@ExtendsWith(MockitoExtension.class)
 public class PrimaryController implements Initializable {
 
     @FXML
